@@ -26,6 +26,13 @@ build:
     # at the right place in the workspace tree
     - setup-go-workspace
 
+    # Show environments
+    - script:
+        name: show environments
+        code: |
+          git version
+          go version
+
     # Gets the dependencies
     - script:
         name: go get
