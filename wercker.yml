@@ -30,7 +30,7 @@ build:
     - script:
         name: go get
         code: |
-          go get github.com/labstack/echo
+          go get -t ./...
 
     # Build the project
     - script:
