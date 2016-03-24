@@ -38,7 +38,7 @@ build:
         name: go get
         code: |
           cd $WERCKER_SOURCE_DIR
-          go get -t ./...
+          go get github.com/labstack/echo
 
     # Build the project
     - script:
